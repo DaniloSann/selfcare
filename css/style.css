@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito:wght@700&display=swap');
 
-body, ul, li {
+body, ul, li, html {
     padding: 0px;
     margin: 0px;
     list-style: none;
@@ -17,7 +17,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
     height: 94px;
 }
 
@@ -30,14 +29,17 @@ a {
     margin-left: 65px;
     padding: 0px;
 }
+.menu-main{
+    padding: 0px 70px 0px 70px;
 
+}
 .menu {
     display: flex;
-    margin-right: 70px;
+    margin-right: 0;
 }
 
 .menu li {
-    margin-left: 40px;
+    paddin-left: 40px;
     height: 10px;
 }
 
@@ -47,7 +49,6 @@ a {
 
 .banner {
     position: relative;
-    width: 100%;
     height: 375px;
 }
 
@@ -76,24 +77,15 @@ a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
     height: 74px;
     margin-top: 0%;
-    justify-content: space-between;
     color: #161616;
     font-size: 20px;
     border-bottom: solid 1px;
     border-color: #e5e2e2;
+    padding: 0px 100px 0px 100px;
 }
 
-.prom {
-    margin-left: 65px;
-    font-weight: bold;
-}
-
-.prod {
-    margin-right: 65px;
-}
 
 .cards {
     display: flex;
@@ -111,7 +103,9 @@ a {
     border: 1px solid;
     border-color: rgb(226, 225, 225);
 }
-
+.cards{
+    padding: 0px 75px 0px 75px;
+}
 .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
     width: 303px;
     height: 393;
@@ -140,12 +134,12 @@ a {
 
 .footer {
     height: 214px;
-    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     background-color: #e0e0e0;
     justify-content: space-between;
+    padding: 0px 70px 0px 70px;
 }
 
 .contato {
@@ -162,7 +156,6 @@ a {
 
 .newsletter {
     margin-top: 40px;
-    margin-right: 70px;
 }
 
 .newsletter input {
@@ -225,31 +218,108 @@ a {
 
 /* MEDIAS QUERIES */
 
-@media (max-width: 1318px) {
+@media (max-width: 780px) {
     .header, .header-bar-2, .cards, .footer, .informations {
         margin-left: 30px;
         margin-right: 30px;
     }
 }
 
-@media (max-width: 704px) {
+@media (max-width: 768px) {
+    .header {
+        padding: 0;
+        height: 50px;
+    }
+    .img-header {
+        margin-left: 0;
+    }
+    .img-header img {
+        width: 100px;
+    }
+    .menu-main {
+        padding: 0;
+        justify-content: none;
+    }
+    .menu img{
+        width: 20px;
+        margin-left: -2rem;
+    }
     .box img {
         width: 200px;
         height: 200px;
     }
 
+
+    .menu li {
+        margin-left: 3rem;
+    }
+    
+    .menu li a {
+        padding: 0;
+    }
+
+
+
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 100px;
+    }
+    
+    .banner .img-box {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .header-bar-2{
+        justify-content: space-between;
+        height: 50px;
+        padding: 0;
+    }
+        
+    .prom {
+        font-size: 15px;
+    }
+
+    .prod {
+        font-size: 15px;
+    }
+
+
+
     .footer {
         flex-direction: column;
+        padding: 0;
+
+    }
+
+    .contato {
+        font-size: 15px;
+        margin-left: -5px;
     }
 
     .newsletter {
-        margin: 40px 0;
+        margin-left: -225px;
+        margin-top: 7rem;
         width: 100%;
+        font-size: 15px;
     }
 
     .newsletter input, .newsletter button {
-        width: 80%;
-        font-size: 16px;
-        margin-bottom: 20px;
+        width: 200px;
+        height: 20px;
+        font-size: 15px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
+    .informations {
+        margin-left: 0;
+    }
+    .informations img {
+        width: 20px;
     }
 }
